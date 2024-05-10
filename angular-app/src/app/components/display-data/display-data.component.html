@@ -1,0 +1,7 @@
+<p>display-data works!</p>
+
+<!-- display-data.component.html -->
+<div *ngIf="data; else noData">
+  <div *ngFor="let item of data">{{ item | json }}</div>
+</div>
+<ng-template #noData>No data available</ng-template>
